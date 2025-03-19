@@ -428,7 +428,7 @@ export default function UserForm({
                         onBlur={() => setIsPasswordFieldFocused(false)}
                       />
                     </FormControl>
-                    {isPasswordFieldFocused && (
+                    {isPasswordFieldFocused && field.value && (
                       <div
                         className="text-small mt-2 pl-2 text-secondary-500"
                         aria-live="polite"
